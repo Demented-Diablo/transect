@@ -1,0 +1,22 @@
+{
+  "name": "transect-project-data-entry",
+  "version": "1.0.0",
+  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd backend && npm start\" \"cd frontend && npm start\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "react-router-dom": "^7.1.5",
+    "xlsx": "^0.18.5",
+    "react-uploader": "^3.43.0",
+    "xml2js": "^0.6.2"
+  }
+}

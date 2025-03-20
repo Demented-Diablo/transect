@@ -1,0 +1,262 @@
+ body {
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #86c9f0, #e9b74b);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto 5px auto;
+    font-family: "Arial";
+    font-size: 50px;
+    color: #2B3A42;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px auto 20px auto;
+}
+
+.messageContainer {
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    font-family: "Arial";
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: #5A98BF;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 15vw;
+    height: 7vh;
+    max-width: 300px;
+    text-align: center;
+    padding: 15px;
+    font-size: large;
+    &:hover {
+        background-color: #5a7fbf;
+        opacity: 0.7;
+        transform: scale(1.01);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.tableContainer {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+}
+
+table {
+    table-layout: fixed;
+    width: 80%;
+    height: 60vh;
+    border: none;
+    overflow: hidden;
+    border-radius: 40px;
+    padding: 15px;
+    margin: 0 auto;
+    background-color: #EAF4FA;
+}
+
+th {
+    font-family: "Arial";
+    border: 1px solid #908f8f;
+    margin: 30px;
+    padding: 5px;
+}
+
+td {
+    font-family: "Arial";
+    border: 1px solid #908f8f;
+    margin: 30px;
+    padding: 5px;
+}
+
+caption {
+    font-family: "Arial";
+    font-size: large;
+    padding: 5px;
+}
+
+.viewDataBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px auto;
+    width: 10rem;
+    height: 3rem;
+    align-items: center;
+    text-align: center;
+    font-family: "Arial";
+    font-size: 1rem;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+}
+
+@media (min-width:1025px) and (max-width:1500px){
+    .tableContainer {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+    }
+
+    .btn {
+        height: 5vh;
+        width: 15vw;
+        font-size: x-large;
+        text-align: center;
+        padding: 15px;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    .firstCol {
+        width: 30%;
+    }
+
+    th {
+        font-size: x-large;
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    td {
+        font-size: x-large;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .tableContainer {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+    }
+
+    .btn {
+        height: 5vh;
+        width: 15vw;
+        font-size: x-large;
+        text-align: center;
+        padding: 15px;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    th {
+        font-size: x-large;
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    td {
+        font-size: x-large;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    .tableContainer {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+    }
+
+    .btn {
+        height: 5vh;
+        width: 25vw;
+        font-size: x-large;
+        text-align: center;
+        padding: 15px;
+    }
+
+    table {
+        width: 80%;
+    }
+
+    th {
+        font-size: x-large;
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    td {
+        font-size: x-large;
+    }
+}
+
+@media (min-width:411px) and (max-width:480px) {
+    .tableContainer {
+        width: 100%;
+    }
+
+    .btn {
+        height: 5vh;
+        width: 27vw;
+        font-size: medium;
+        text-align: center;
+        padding: 10px;
+    }
+
+    table {
+        width: 100%;
+        height: 100vh;
+        margin: 20px 0px 40px 0px;
+        overflow-x: auto;
+    }
+
+    th {
+        font-size: x-large;
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    td {
+        font-size: small;
+    }
+}
+
+@media (min-width:320px) and (max-width:410px) {
+    .tableContainer {
+        width: 100%;
+    }
+
+    .btn {
+        height: 5vh;
+        width: 28vw;
+        font-size: small;
+        text-align: center;
+        padding: 5px;
+    }
+
+    table {
+        width: 100%;
+        height: 100vh;
+        margin: 20px 0px 40px 0px;
+        overflow-x: auto;
+    }
+
+    th {
+        font-size: x-large;
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    td {
+        font-size: small;
+    }
+}

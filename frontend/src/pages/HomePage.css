@@ -1,0 +1,84 @@
+.container {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #86c9f0, #e9b74b);
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    height: 100vh;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    align-items: center;
+    color: #050505;
+    padding: 10px 20px; /* reduced padding to fit everything without scrolling */
+    margin: auto 0; /* centering in the viewport */
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.header p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.button-block {
+    background: linear-gradient(135deg, #e08822, #4c8bb0);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 320px; 
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.nav-links li {
+    display: block;
+    margin: 20px 0; /* more space between buttons */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #e9b74b;
+    padding: 18px 36px; /* increased padding for bigger buttons */
+    border-radius: 8px;
+    display: block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 22px; /* larger font size */
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto; /* center the button */
+    width: 240px; /* larger fixed width for buttons */
+}
+
+.nav-link:hover {
+    background-color: #db9437;
+    transform: translateY(-3px);
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    color: #666;
+    border-top: 1px solid #e0e0e0;
+}
